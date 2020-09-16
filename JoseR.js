@@ -1,19 +1,25 @@
 const discord=require("discord.js");
 const client=new discord.Client();
+const respuesta=require("./respuesta.json")
 
 let c={
-  c:""
-
+  c:"",
+  calla:0
+}
+function generateRandom(min, max) {
+	min = Math.ceil(min)
+	max = Math.floor(max)
+return Math.floor(Math.random() * (1 + max - min) + min)
 }
 client.on("ready",()=>{
   console.log("jose no tendra mod")
-  c.c =client.channels.cache.get("754113510379880458")
+  c.c=client.channels.cache.get("754113510379880458")
   c.c.send(`<@720304994523283497> no tendras mod `);
 })
 
 client.on("message", (message)=>{
   let m=message.content.split(" ")
-  console.log(m)
+
   if(message.author.id==720304994523283497){
     let mFiltred=m.map((mes)=>{
 
@@ -33,9 +39,14 @@ client.on("message", (message)=>{
 
       }
     });
-
+    c.calla++;
+    if(c.calla>generateRandom(5,30)){
+      message.channel.send(`<@720304994523283497> calla${respuesta.palabras[generateRandom(0,respuesta.palabras.lenght)]}`)
+    }
 
   }
+  
 })
 
-client.login("token")//no tendran el token del bot 
+
+client.login("NzU1NDM4ODU2NjEzOTIwNzc4.X2DTQg.rnqzzDj0sYIoyfs5bD7ACuTHYug")
