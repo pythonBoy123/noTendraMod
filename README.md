@@ -6,4 +6,6 @@ aun asi si quieren ejecutarlo solo deben de ejcutar el comando npm i
 npm i
 ```
 o el comando 
-```npm install```
+```shell
+npm install
+```
