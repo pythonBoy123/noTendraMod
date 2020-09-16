@@ -49,4 +49,4 @@ client.on("message", (message)=>{
 })
 
 
-client.login("NzU1NDM4ODU2NjEzOTIwNzc4.X2DTQg.rnqzzDj0sYIoyfs5bD7ACuTHYug")
+client.login("token")
