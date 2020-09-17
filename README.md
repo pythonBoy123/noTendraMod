@@ -12,3 +12,6 @@ o el comando
 ```shell
 npm install
 ```
+y para correrlo use el comando 
+```bash
+npm start```
