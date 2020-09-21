@@ -45,7 +45,7 @@ client.on("ready",()=>{
   })
   let mmap=m.map((i)=>{
     if(i==":v"||i==":u"||i==";v"||i==";v"){//este es para responderle a los papulinces
-      c.c.send(`<@${message.author.id}> calla ${respuesta.palabras[valorAleatorio(0,tamaño)]} `);//mi rey ya fue solucionado
+      c.c.send(`<@${message.author.id}> calla ${respuesta.palabras[valorAleatorio(0,tamaño)]} `);
         //valor aleatorio lo uso para obtener alguna respuesta aleatoria del json
     }
   })
