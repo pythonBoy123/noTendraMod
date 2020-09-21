@@ -7,10 +7,10 @@ let c={
   c:"",
   calla:0
 }
-function valorAleatorio(min, max) {//obtendra un valor aleatorio
-	min = Math.ceil(min)
-	max = Math.floor(max)
-  return Math.floor(Math.random() * (1 + max - min) + min)
+function valorAleatorio(min, max) {//obtendra un valor aleatorio 
+   min = Math.ceil(min)
+   max = Math.floor(max)
+   return Math.floor(Math.random() * (1 + max - min) + min)
 }
 
 client.on("ready",()=>{
