@@ -16,7 +16,7 @@ function valorAleatorio(min, max) {//obtendra un valor aleatorio
 client.on("ready",()=>{
   console.log("jose no tendra mod")
   try{
-  c.c=client.channels.cache.get("754113510379880458")}
+  c.c=client.channels.cache.get("754113510379880458")}//Este es solo para responder en cierto canal
   catch(e){
     console.log("no se encontro el canal")
   };
