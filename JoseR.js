@@ -1,7 +1,7 @@
 const discord=require("discord.js")
 const client=new discord.Client();
 const respuesta=require("./respuesta.json")
-const token="NzU1NDM4ODU2NjEzOTIwNzc4.X2DTQg.Q60vEp1Qz2gFYvXc8UW9YUnpInI";//ingresa el token de tu bot
+const token="";//ingresa el token de tu bot
 
 let c={
   c:"",
