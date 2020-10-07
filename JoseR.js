@@ -24,10 +24,10 @@ client.on("ready",()=>{
   client.on("message", (message)=>{
     let m=message.content.toLowerCase().split(" ")
     let tamaño=Object.keys(respuesta.palabras).length-1;
-    let personas=respuesta.personas.map((i)=>{//este es para responderle a los que esten dentro del array personas
+    respuesta.personas.map((i)=>{//este es para responderle a los que esten dentro del array personas
       if(i==message.author.id){
         c.calla++;
-        let mFiltred=m.map((mes)=>{
+        m.map((mes)=>{
           //respuestas que puede darle en caso que su mensaje contenga alguno de estos valores
           if(mes=="mod"||mes=="moderador"){
             c.c.send(`<@${i}> no tendras mod `);
@@ -43,7 +43,7 @@ client.on("ready",()=>{
       });
     }
   })
-  let mmap=m.map((i)=>{
+ m.map((i)=>{
     if(i==":v"||i==":u"||i==";v"||i==";v"){//este es para responderle a los papulinces
       c.c.send(`<@${message.author.id}> calla ${respuesta.palabras[valorAleatorio(0,tamaño)]} `);
         //valor aleatorio lo uso para obtener alguna respuesta aleatoria del json
